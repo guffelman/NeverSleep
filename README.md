@@ -1,4 +1,5 @@
 # NeverAway
+![logo](icon.ico)
 A simple application to make sure your computer never sleeps. 
 
 Also keeps you active on Teams, Slack, etc!
