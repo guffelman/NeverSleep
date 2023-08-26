@@ -62,7 +62,7 @@ func initializeLogger(settingsDir string) {
 func createAppInstance(appID string) fyne.App {
 	myApp := app.NewWithID(appID)
 	myApp.SetIcon(&fyne.StaticResource{
-		StaticName:    "icon.ico",
+		StaticName:    "/img/icon.ico",
 		StaticContent: extractIcon(),
 	})
 	return myApp
