@@ -62,7 +62,7 @@ func initializeLogger(settingsDir string) {
 func createAppInstance(appID string) fyne.App {
 	myApp := app.NewWithID(appID)
 	myApp.SetIcon(&fyne.StaticResource{
-		StaticName:    "/img/icon.ico",
+		StaticName:    "icon.ico",
 		StaticContent: extractIcon(),
 	})
 	return myApp
@@ -280,7 +280,7 @@ func loadSettings(settingsFilePath string) {
 }
 
 func extractIcon() []byte {
-	iconFile, err := os.Open("icon.ico")
+	iconFile, err := os.Open("/img/icon.ico")
 	if err != nil {
 		logger.Panic(err)
 	}
