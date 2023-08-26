@@ -5,5 +5,5 @@ Also keeps you active on Teams, Slack, etc!
 
 
 ## Download
-Download the application via the exe available [here](https://github.com/guffelman/NeverSleep/blob/main/NeverSleep.exe?raw=true).
+Download the application via the exe available [here](https://github.com/guffelman/NeverSleep/blob/main/NeverSleep.exe).
  
