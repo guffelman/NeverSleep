@@ -280,7 +280,7 @@ func loadSettings(settingsFilePath string) {
 }
 
 func extractIcon() []byte {
-	iconFile, err := os.Open("/img/icon.ico")
+	iconFile, err := os.Open("./img/icon.ico")
 	if err != nil {
 		logger.Panic(err)
 	}
