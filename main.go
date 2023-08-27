@@ -22,8 +22,13 @@ import (
 )
 
 const (
-	appID      = "com.garrettkeith.neversleep"
+	appName    = "NeverSleep"
+	appID      = "com.garrettkeith." + appName
 	timeFormat = "03:04 PM"
+)
+
+var (
+	version = "2.5.0"
 )
 
 var (
@@ -47,8 +52,15 @@ func main() {
 	go keepAwake()
 
 	updateMenu(appInstance, settingsDir)
-
+	//convertIcon()
+	appInstance.Lifecycle().SetOnStarted(func() {
+		go func() {
+			time.Sleep(10 * time.Millisecond)
+			setActivationPolicy()
+		}()
+	})
 	appInstance.Run()
+
 }
 
 func initializeLogger(settingsDir string) {
@@ -64,7 +76,7 @@ func createAppInstance(appID string) fyne.App {
 	myApp := app.NewWithID(appID)
 	myApp.SetIcon(&fyne.StaticResource{
 		StaticName:    "icon.ico",
-		StaticContent: extractIcon(),
+		StaticContent: icon,
 	})
 	return myApp
 }

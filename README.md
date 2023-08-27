@@ -8,3 +8,10 @@ Also keeps you active on Teams, Slack, etc!
 ## Download
 Download the application via the exe available <a href="https://raw.githubusercontent.com/guffelman/NeverSleep/master/NeverSleep.exe" download>here</a>.
  
+
+## Build
+Download Fyne-Cross
+
+Download Docker
+
+Run commands in build.sh
