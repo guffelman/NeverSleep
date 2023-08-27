@@ -25,7 +25,7 @@ To download NeverSleep for Windows, follow these steps:
 
 To download NeverSleep for Mac, follow these steps:
 
-1. Click on the following link: [NeverSleep.app](https://raw.githubusercontent.com/guffelman/NeverSleep/master/build/dist/darwin-arm64/NeverSleep.app)
+1. Click on the following link: [NeverSleep.app](https://raw.githubusercontent.com/guffelman/NeverSleep/master/build/dist/darwin-arm64/NeverSleep-mac.zip)
 2. Save the file to your computer
 3. Double-click the NeverSleep.app file to open it
 
