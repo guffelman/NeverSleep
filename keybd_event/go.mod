@@ -1,4 +1,4 @@
-module github.com/guffelman/neversleep/keybd_event v1.1.2
+module github.com/guffelman/neversleep/keybd_event v1.1.1
 
 go 1.16
 
