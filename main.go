@@ -11,7 +11,7 @@ import (
 	"runtime"
 	"time"
 
-	"neversleep/keybd_event"
+	"github.com/micmonay/keybd_event"
 
 	"fyne.io/fyne/v2"
 	"fyne.io/fyne/v2/app"

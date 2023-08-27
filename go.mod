@@ -2,9 +2,14 @@ module github.com/guffelman/neversleep
 
 go 1.19
 
-require github.com/guffelman/neversleep/keybd_event v1.1.1
+// local import for neversleep/keybd_event
 
-require fyne.io/fyne/v2 v2.3.5
+replace github.com/micmonay/keybd_event => ./keybd_event
+
+require (
+	fyne.io/fyne/v2 v2.3.5
+	github.com/micmonay/keybd_event v0.0.0-00010101000000-000000000000
+)
 
 require (
 	fyne.io/systray v1.10.1-0.20230602210930-b6a2d6ca2a7b // indirect
