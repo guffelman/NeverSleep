@@ -1,5 +1,6 @@
 # NeverSleep
 <img src="/img/alternate.png" style="width:25%"></img>
+
 A simple application to make sure your computer never sleeps. 
 
 Also keeps you active on Teams, Slack, etc!
