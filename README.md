@@ -6,8 +6,6 @@ A simple application to make sure your computer never sleeps.
 Also keeps you active on Teams, Slack, etc!
 
 
-GitHub Copilot: Sure, here's a modified version of the download section that includes instructions for each OS:
-
 ## Download
 
 NeverSleep is cross-platform and can be built for any OS. You can find download links for your specific operating system below.
@@ -49,4 +47,3 @@ If you would like to contribute to NeverSleep, please follow these steps:
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
-Feel free to customize this README to fit your specific project and needs. Let me know if you need any further assistance!
