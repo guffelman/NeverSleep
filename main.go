@@ -121,6 +121,7 @@ func updateMenu(appInstance fyne.App, settingsDir string) {
 
 func showActiveHours(myApp fyne.App, settingsDir string) {
 	activeHoursWindow := myApp.NewWindow("Active Hours")
+	activeHoursWindow.SetFixedSize(true) // Set the window to a fixed size
 	days := []string{"Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"}
 	items := []fyne.CanvasObject{}
 
@@ -158,8 +159,11 @@ func showActiveHours(myApp fyne.App, settingsDir string) {
 	})
 
 	items = append(items, saveButton)
-	activeHoursWindow.SetContent(container.NewVBox(items...))
-	activeHoursWindow.Resize(fyne.NewSize(200, 400))
+	vbox := container.NewVBox(items...)
+	scrollContainer := container.NewScroll(vbox)
+	scrollContainer.Resize(fyne.NewSize(200, 400))
+	activeHoursWindow.SetContent(scrollContainer)
+	activeHoursWindow.Resize(fyne.NewSize(400, 600)) // Set the initial size of the window
 	activeHoursWindow.Show()
 }
 
