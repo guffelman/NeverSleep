@@ -2,6 +2,8 @@ module github.com/guffelman/neversleep
 
 go 1.19
 
+require github.com/guffelman/neversleep/keybd_event v1.1.1
+
 require fyne.io/fyne/v2 v2.3.5
 
 require (
